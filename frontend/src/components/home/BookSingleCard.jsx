@@ -6,6 +6,7 @@ import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineDelete } from 'react-icons/md';
 import { useState } from 'react';
 import BookModal from './BookModal';
+import { motion } from 'framer-motion';
 
 const BookSingleCard = ({ book }) => {
   const [showModal, setShowModal] = useState(false);
