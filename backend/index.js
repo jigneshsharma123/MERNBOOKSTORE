@@ -6,13 +6,13 @@ import cors from "cors";
 const app = express();
 // middleware for handling CORS policy
 //option 1 : allow all origin with default of cors(*);
-// app.use(cors());
+app.use(cors());
 //Option 2:L allow custom origins
-app.use(cors({
- origin : 'http://localhost:3000',
- methods : ['GET', 'POST', 'PUT','DELETE'],
- allowedHeaders : ['Content-Type'],
-}));
+// app.use(cors({
+//  origin : 'http://localhost:5173/',
+//  methods : ['GET', 'POST', 'PUT','DELETE'],
+//  allowedHeaders : ['Content-Type'],
+// }));
 app.use(express.json());
 
 app.get("/", (req,res)=> {
